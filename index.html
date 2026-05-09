@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koneko - Your adorable cat companion</title>
+    
+    <!-- Meta-Tags für die Vorschau in Discord -->
+    <meta property="og:title" content="Koneko - Dein Discord Begleiter">
+    <meta property="og:description" content="Erschaffe eine lebendige Community mit dem All-in-One Anime-Bot.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta name="theme-color" content="#eb459e">
+
+    <!-- Tailwind CSS & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        .hero-gradient { background: radial-gradient(circle at 90%, #fff0f3 0%, #ffffff 50%); }
+        .btn-pink { background-color: #eb459e; transition: all 0.3s ease; }
+        .btn-pink:hover { background-color: #d83a8f; transform: translateY(-2px); }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="hero-gradient min-h-screen">
+
+    <!-- NAVIGATION (Inspirationsquelle: unnamed.jpg) -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="assets/logo.png" alt="Koneko Logo" class="w-10 h-10 rounded-full shadow-sm">
+            <span class="text-xl font-bold text-gray-800">Koneko</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="#features" class="hover:text-pink-500">Commands</a>
+            <a href="#" class="hover:text-pink-500">Modules</a>
+            <a href="#" class="hover:text-pink-500">Resources</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button class="text-yellow-600 font-medium flex items-center">👑 Premium</button>
+            <button class="bg-gray-100 px-4 py-2 rounded-lg font-semibold text-gray-700 hover:bg-gray-200">Login</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Struktur aus unnamed_2.jpg) -->
+    <main class="max-w-7xl mx-auto px-6 pt-20 pb-32 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left">
+            <div class="inline-block bg-pink-50 text-pink-500 px-3 py-1 rounded-full text-sm font-bold mb-6">✨ The cutest bot</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Your adorable neko <br> companion for Discord
+            </h1>
+            <p class="text-gray-500 text-lg mb-10 max-w-lg">
+                Create a vibrant community with the all-in-one anime bot. 
+                Currency, roleplay, and administration in one place. 
+                Simple, adorable, and designed to connect.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="btn-pink text-white px-8 py-4 rounded-xl font-bold shadow-lg text-center">Add the bot</a>
+                <a href="#" class="bg-white border border-gray-200 px-8 py-4 rounded-xl font-bold text-gray-700 shadow-sm hover:bg-gray-50 text-center">Manage servers</a>
+            </div>
+        </div>
+
+        <!-- BILD-BEREICH -->
+        <div class="md:w-1/2 mt-16 md:mt-0 relative flex justify-center">
+            <div class="absolute inset-0 bg-pink-200 rounded-full blur-3xl opacity-20"></div>
+            <img src="assets/logo.png" alt="Koneko" class="floating relative z-10 w-80 h-80 md:w-[400px] md:h-[400px] object-cover rounded-full border-[12px] border-white shadow-2xl">
+            <!-- Dekorative Icons -->
+            <div class="absolute top-10 right-10 text-2xl animate-pulse">❤️</div>
+            <div class="absolute bottom-10 left-10 text-2xl">🎵</div>
+        </div>
+    </main>
+
+    <!-- SOCIAL PROOF (Slogan aus unnamed.jpg) -->
+    <section class="max-w-7xl mx-auto px-6 text-center border-t border-gray-100 pt-20 pb-20">
+        <p class="text-pink-500 font-bold uppercase tracking-[0.2em] text-xs mb-4">Trusted by</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 italic mb-4">more than 4 million servers</h2>
+        <p class="text-gray-400 font-medium">Built with love for Discord communities around the world 🐾</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 py-10 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:text-pink-500">Terms of Service</a>
+            <a href="#" class="hover:text-pink-500">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Koneko Bot. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
